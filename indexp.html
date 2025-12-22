@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark CodePad</title>
+  <link rel="stylesheet" href="hctn_style.css">
+</head>
+
+<body>
+  <header>
+    <a href="https://www.example.com" target="_blank" rel="noopener">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xW_tn9MSIk1zYidA-0MwvF4koTVJoHM3lw&s" alt="Logo">
+    </a>
+    <h1>Text Editor Pro </h1>
+  </header>
+
+  <main>
+    <!-- Sign-in Form -->
+    <div class="signin">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <button onclick="signIn()">Sign In</button>
+    </div>
+
+    <!-- Editor -->
+    <textarea id="editor" placeholder="Type your code or text here..." disabled></textarea>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button onclick="undo()">Undo</button>
+      <button onclick="redo()">Redo</button>
+      <button onclick="save()">Save</button>
+    </div>
+
+    <!-- Stack Visualizations -->
+    <div class="stacks">
+      <div class="stack">
+        <h3>Undo Stack</h3>
+        <div id="undoStackView"></div>
+      </div>
+      <div class="stack">
+        <h3>Redo Stack</h3>
+        <div id="redoStackView"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="hctn_script.js"></script>
+  <script src="hktn_package.json"></script>
+  <script src="hktn_server.js"></script>
+  <script src="bkend.js"></script>
+</body>
+</html>
